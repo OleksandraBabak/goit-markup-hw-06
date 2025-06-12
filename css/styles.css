@@ -9,7 +9,8 @@
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -243,27 +244,50 @@ header {
   margin-bottom: 8px;
 }
 
+.title-advantages {
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 .text {
   color: #434455;
   block-size: border-box;
 }
 
+.text-advantages {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .advantages-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .advantages-box {
-  display: flex;
+  display: none;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   width: 264px;
@@ -271,7 +295,7 @@ header {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 
 .team {
@@ -414,8 +438,8 @@ header {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 .footer .text-footer {
   color: #f4f4fd;
@@ -436,7 +460,7 @@ header {
 }
 
 .footer .logo {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   display: inline-block;
 }
 
@@ -449,8 +473,12 @@ header {
 }
 
 .footer-container {
+  /* display: flex;
+  flex: wrap;
+  align-items: baseline; */
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
@@ -461,7 +489,10 @@ header {
 }
 
 .footer-logo-block {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  display: block;
+  max-width: 288px;
+  text-align: center;
 }
 
 .footer-icon-items {
