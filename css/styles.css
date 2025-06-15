@@ -11,8 +11,8 @@
 .container {
   width: 100%;
   max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -250,7 +250,9 @@ header {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  display: block;
   text-align: center;
+  width: 100%;
   margin-bottom: 8px;
 }
 
@@ -265,6 +267,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  max-width: 288px;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -460,7 +464,7 @@ header {
 }
 
 .footer .logo {
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
   display: inline-block;
 }
 
@@ -468,9 +472,9 @@ header {
   color: #f4f4fd;
 }
 
-.text-footer {
-  max-width: 264px;
-}
+/* .text-footer {
+  max-width: 288px;
+} */
 
 .footer-container {
   /* display: flex;
@@ -482,10 +486,14 @@ header {
 }
 
 .footer-icons {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 80px;
+  margin-right: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px;
 }
 
 .footer-logo-block {
@@ -493,6 +501,8 @@ header {
   display: block;
   max-width: 288px;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .footer-icon-items {
@@ -532,9 +542,12 @@ header {
 }
 
 .footer-subscribe {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
+  display: block;
+  text-align: center;
+  padding-bottom: 96px;
 }
 
 .subscribe-text {
@@ -555,7 +568,9 @@ header {
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-input {
