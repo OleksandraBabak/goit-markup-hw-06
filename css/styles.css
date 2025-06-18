@@ -89,7 +89,7 @@ header {
   padding-bottom: 24px; */
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .header-container {
@@ -531,6 +531,7 @@ header {
   flex: wrap;
   align-items: baseline; */
   display: flex;
+  gap: 72px;
   flex-direction: column;
   align-items: center;
   padding: 96px 16px;
@@ -544,14 +545,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 72px;
 }
 
 .footer-logo-block {
   /* margin-right: 120px; */
   display: block;
   max-width: 288px;
-  margin-bottom: 72px;
 }
 
 .footer-logo-wrapper {
@@ -639,10 +638,12 @@ header {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  opacity: 0.3;
 }
 
 .footer-input::placeholder {
   color: #fff;
+  opacity: 0.6;
 }
 
 .footer-btn {
@@ -1030,6 +1031,10 @@ header {
     align-items: center;
   } */
 
+  .header .logo {
+    margin-right: 120px;
+  }
+
   .site-nav {
     display: flex;
     /* display: none; */
@@ -1146,6 +1151,7 @@ header {
     align-items: flex-start;
     padding: 96px 164px 96px 108px;
     justify-content: space-between;
+    column-gap: 0;
   }
 
   .footer-logo-wrapper {
@@ -1162,10 +1168,6 @@ header {
     text-align: left;
   }
 
-  .footer-input-text {
-    opacity: 0.6;
-  }
-
   .footer-form {
     display: flex;
     flex-direction: row;
@@ -1180,6 +1182,10 @@ header {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+  }
+
+  .header .logo {
+    margin-right: 76px;
   }
 
   .link-nav::after {
@@ -1214,6 +1220,10 @@ header {
         ),
         url(../images/hero-img-2x.jpg);
     }
+  }
+
+  .page-title {
+    margin-bottom: 48px;
   }
 
   .advantages-box {
@@ -1257,9 +1267,25 @@ header {
     padding-bottom: 120px;
   }
 
+  .portfolio-list {
+    row-gap: 40px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+
   .footer-container {
     display: flex;
     flex: wrap;
     align-items: baseline;
+  }
+
+  .footer-input {
+    opacity: 1;
+  }
+
+  .footer-input::placeholder {
+    opacity: 1;
   }
 }
