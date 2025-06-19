@@ -10,7 +10,7 @@
 
 .container {
   width: 100%;
-  max-width: 288px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -87,8 +87,8 @@ header {
   display: block;
   /* padding-top: 24px;
   padding-bottom: 24px; */
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /* padding-top: 16px;
+  padding-bottom: 16px; */
   /* margin-right: 76px; */
 }
 
@@ -534,7 +534,8 @@ header {
   gap: 72px;
   flex-direction: column;
   align-items: center;
-  padding: 96px 16px;
+  /* padding: 96px 16px; */
+  padding: 96px 0;
 }
 
 .footer-icons {
@@ -967,7 +968,7 @@ header {
   color: #8e8f99;
   display: flex;
   align-items: flex-start;
-  gap: 5px;
+  gap: 7px;
 }
 
 .check-text-policy {
@@ -978,6 +979,8 @@ header {
   display: inline-flex;
   width: 16px;
   height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
@@ -1207,6 +1210,7 @@ header {
   .contacts-address {
     flex-direction: row;
     gap: 40px;
+    padding: 0;
   }
 
   .hero {
