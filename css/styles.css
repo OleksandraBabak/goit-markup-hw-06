@@ -1148,7 +1148,7 @@ header {
   .container {
     width: 100%;
     max-width: 1158px;
-    margin: 0 15px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 
@@ -1256,6 +1256,7 @@ header {
     display: flex;
     flex: wrap;
     align-items: flex-start;
+    padding: 100px 0;
   }
 
   .footer-logo-block {
